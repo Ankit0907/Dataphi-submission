@@ -8,7 +8,6 @@ exports.submit_form = function(req, res){
     var phone = conn.escape(req.body.phone);
     var gender = conn.escape(req.body.gender);
     var text = conn.escape(req.body.text);
-    console.log(dob);
     var query = `INSERT INTO form_data (first_name, last_name, age, dob, phone, gender, text) VALUES (${firstName}, ${lastName}, ${age}, ${dob}, ${phone}, ${gender}, ${text})`;
     conn.query(query, function(err, result){
         if(err){
