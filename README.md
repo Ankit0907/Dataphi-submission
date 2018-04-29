@@ -4,11 +4,14 @@
 - Node version: greater than 6.
 - npm version: greater than 3.
 - yarn version: greater than 1.3.
+- mysql version heigher than 5.
     
 #### Below are the steps to run the project into your local machine:
 
   - Clone the repository: `git clone https://github.com/Ankit0907/Dataphi-submission.git`
-  - Go to the project: `cd Dataphi-submission`
+  - Go to the project: `cd Dataphi-submission`.
+  - Copy .env.sample to .env and fill the database credentials of you mysql database.
+  - Create table by importing the sql `schema.sql`.
   - Run `yarn` or `npm install`
   - Starting the project on port 3000: `npm start` or `yarn start`
 
